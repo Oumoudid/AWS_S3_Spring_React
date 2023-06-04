@@ -32,6 +32,6 @@ public class AwsImageUploadApplication implements CommandLineRunner {
             throw new IllegalStateException("NULL");
         }
         MultipartFile result = new MockMultipartFile(file.getName(),file.getName(), "text/plain", content );
-        userProfileService.uploadUserProfileImage(UUID.randomUUID(), result);
+        //userProfileService.uploadUserProfileImage(UUID.randomUUID(), result);
     }
 }
